@@ -1,16 +1,16 @@
 ```
+##### PATH #####
+export PATH=/Applications/MAMP/bin/php/php7.4.21/bin:$PATH
+export ZSH="$HOME/.oh-my-zsh"
+##### PATH #####
+
+
 ##### ZSH CONFIG (iTerm2) #####
 ZSH_DISABLE_COMPFIX="true"
 ZSH_THEME="af-magic"  # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 plugins=(git)  # Example format: plugins=(rails git textmate ruby lighthouse)
 source $ZSH/oh-my-zsh.sh
 ##### ZSH CONFIG (iTerm2) #####
-
-
-##### PATH #####
-export PATH=/Applications/MAMP/bin/php/php7.4.21/bin:$PATH
-export ZSH="$HOME/.oh-my-zsh"
-##### PATH #####
 
 
 ##### ALIASES #####

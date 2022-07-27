@@ -16,13 +16,15 @@ source $ZSH/oh-my-zsh.sh
 ##### ALIASES #####
 
 ### DOCKER ###
-alias dockervolumesmac="docker run -it --privileged --rm --name MAC_VOLUMES --pid=host debian nsenter -t 1 -m -u -n -i sh"
+alias ps="docker ps -a"
+alias volumemac="docker run -it --privileged --rm --name MAC_VOLUMES --pid=host debian nsenter -t 1 -m -u -n -i sh"
 alias composebuildup="docker-compose build && docker-compose up -d --remove-orphans"
 alias composeup="docker-compose up -d --remove-orphans"
 alias prune="docker builder prune -f"
 alias hardprune="docker-compose down && docker system prune -af --volumes && docker builder prune -f"
+alias rmcontainer="docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)"
 dockerexec () {docker exec -it -u root "$@" bash;}
-containergitpull () {docker exec -it -u root "$@" bash -c "git pull";}
+dockerexecpull () {docker exec -it -u root "$@" bash -c "git pull";}
 ### DOCKER ###
 
 ### ZSHRC FILE ###
@@ -35,6 +37,5 @@ alias catzshrc="cat ~/.zshrc"
 alias myip="curl http://ipecho.net/plain; echo"
 alias mylocalip="ifconfig | grep 192"
 ### IP ###
-
 ##### ALIASES #####
 ```

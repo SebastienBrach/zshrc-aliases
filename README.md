@@ -28,9 +28,13 @@ containergitpull () {docker exec -it -u root "$@" bash -c "git pull";}
 ### ZSHRC FILE ###
 alias nanozshrc="nano ~/.zshrc"
 alias sourcezshrc="source ~/.zshrc"
+alias catzshrc="cat ~/.zshrc"
 ### ZSHRC FILE ###
 
+### IP ###
 alias myip="curl http://ipecho.net/plain; echo"
+alias mylocalip="ifconfig | grep 192"
+### IP ###
 
 ##### ALIASES #####
 ```

@@ -1,3 +1,4 @@
+```
 ##### ZSH CONFIG (iTerm2) #####
 ZSH_DISABLE_COMPFIX="true"
 ZSH_THEME="af-magic"  # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
@@ -32,3 +33,4 @@ alias sourcezshrc="source ~/.zshrc"
 alias myip="curl http://ipecho.net/plain; echo"
 
 ##### ALIASES #####
+```

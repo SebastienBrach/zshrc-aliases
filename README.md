@@ -27,6 +27,11 @@ dockerexec () {docker exec -it -u root "$@" bash;}
 dockerexecpull () {docker exec -it -u root "$@" bash -c "git pull";}
 ### DOCKER ###
 
+### USEFULL ###
+alias htmldir="cd /var/www/html/"
+alias desktopdir="/Users/sebastienbrach/Desktop"
+### USEFULL ###
+
 ### ZSHRC FILE ###
 alias nanozshrc="nano ~/.zshrc"
 alias sourcezshrc="source ~/.zshrc"

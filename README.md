@@ -26,6 +26,7 @@ alias hardprune="docker compose down && docker system prune -af --volumes && doc
 alias rmcontainer="docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)"
 dockerexec () {docker exec -it -u root "$@" bash;}
 dockerexecpull () {docker exec -it -u root "$@" bash -c "git pull";}
+dockerstats () {docker stats --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.MemPerc}}\t{{.PIDs}}" "$@";}
 ### DOCKER ###
 
 ### USEFULL ###

@@ -32,6 +32,7 @@ dockerstats () {docker stats --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsag
 ### USEFULL ###
 alias htmldir="cd /var/www/html/"
 alias desktopdir="/Users/$USER/Desktop"
+diskusage () {du -shc "$@"| sort -hr;}
 ### USEFULL ###
 
 ### ZSHRC FILE ###
@@ -44,5 +45,3 @@ alias catzshrc="cat ~/.zshrc"
 alias myip="curl http://ipecho.net/plain; echo"
 alias mylocalip="ifconfig | grep 192"
 ### IP ###
-##### ALIASES #####
-```

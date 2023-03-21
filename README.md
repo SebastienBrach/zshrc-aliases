@@ -1,6 +1,6 @@
 ```
 ##### PATH #####
-export PATH=/Applications/MAMP/bin/php/php7.4.21/bin:$PATH
+export PATH=/Applications/MAMP/bin/php/php8.0.8/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 ##### PATH #####
 

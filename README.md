@@ -32,7 +32,7 @@ dockerstats () {docker stats --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsag
 ### USEFULL ###
 alias htmldir="cd /var/www/html/"
 alias desktopdir="/Users/$USER/Desktop"
-diskusage () {du -shc "$@"| sort -hr;}
+diskusage () {du -shc "$@"| sort -h;}
 ### USEFULL ###
 
 ### ZSHRC FILE ###
